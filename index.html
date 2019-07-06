@@ -13,7 +13,7 @@
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   	<script src="https://unpkg.com/vue"></script>
+   	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
 
 	<!-- styles -->
@@ -52,10 +52,32 @@
 		<a href="#footer" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
 	</li>
 </ul>
-
-<h1>{{$name}}</h1>
+<h2 class="jumbotron bg-danger text-white myShadow d-flex justify-content-center p-1">{{greet('afternoon')}}</h2>
+<h2>{{greet2('night')}}</h2>
+<h2>Her name is :{{name}}</h2>
+<h3>And she is a :{{job}}</h3>
 
 </div><!-- End of id="vue-app" div -->
+<script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- footer  -->
 <div id="footer" class="container-fluid bg-primary text-white pb-3 pt-3">

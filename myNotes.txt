@@ -1,1 +1,23 @@
 https://github.com/AAAVillar/LearningVueAndBootstrap.git
+
+1. the first thing was to write a script that connected to a CDN from vue.org/installation
+2. the second thing was to write a <div id="vue-app"> everything that vue controlls 
+	will be placed inside this div.
+3. then write a script to bring into the html your <script src= "app.js"></script>
+	this is where you write the data/methods for the Vue.js
+4. In the app.js folder you create a instance of:
+                  new Vue({
+	                        el:'#vue-app',
+
+	                        data:{
+	                        	name:"billyBob",
+	                        	job:"fry Cook"
+	                             },
+
+	                        methods:{
+	                        	greet:function(){
+	                        	return 'Good Morning'
+	                        	} // end of greet function
+
+	                        } // end of methods
+})  // end of new Vue
