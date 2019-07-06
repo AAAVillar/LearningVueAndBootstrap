@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="description" content="html5,css3,javascript,Vue.js">
+	<meta name="keywords" content="html5,css3,javascript,Vue.js">
+	<meta name="author" content="mySelf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- javascript jquery,popper, bootstrap-->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   	<script src="https://unpkg.com/vue"></script>
+
+
+	<!-- styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<!-- my Icons for the nav bar -->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Workin With Vue</title>
+
+</head>
+<!-- End of div -->
+<body>
+
+<div id = "vue-app" class = "container-fluid">
+
+<!--  Nav  -->
+<ul class="nav bg-dark text-white p-0 justify-content-center fixed-top mb-3">
+	<li class="nav-item">
+		<a href="#theTop" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+	</li>
+	<li class="nav-item">
+		<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+	</li>
+	<li class="nav-item">
+		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+	</li>
+	<li class="nav-item">
+		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+	</li>
+	<li class="nav-item">
+		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+	</li>
+	<li class="nav-item">
+		<a href="#footer" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
+	</li>
+</ul>
+
+<h1>{{$name}}</h1>
+
+</div><!-- End of id="vue-app" div -->
+
+<!-- footer  -->
+<div id="footer" class="container-fluid bg-primary text-white pb-3 pt-3">
+	<!-- nav -->
+<h2 id="theBottom" class="course-heading  d-flex justify-content-center mb-0 mt-0 pt-1 pb-1 bg-primary text-white myShadow myBorder"><i class='fas fa-socks' style='font-size:24px'></i>-*footer </h2>
+<ul class="nav bg-white justify-content-center myShadow myBorder">
+	<li class="nav-item">
+		<a href="#theTop" class="nav-link text-dark"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+	</li>
+	<li class="nav-item">
+		<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+	</li>
+	<li class="nav-item">
+		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye myShadow' style='font-size:24px'></i> Buttons</a>
+	</li>
+	<li class="nav-item">
+		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+	</li>
+	<li class="nav-item">
+		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit myShadow' style='font-size:24px'></i>Forms</a>
+	</li>
+	
+</ul>
+
+
+<h3 id = "demo1">test</h3>
+</div>  <!-- End of the id="footer" -->
+<script src = "main.js"></script>
+</body>
+</html>

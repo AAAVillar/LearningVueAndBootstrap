@@ -1,0 +1,45 @@
+/* THIS IS HOW YOU LEAVE COMMENTS IN CSS */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background:rgba(0,0,255,.3);
+	color:yellow;
+	padding:10px;
+	margin:10px;
+	font-family:tahoma;
+	
+}
+
+#vue-app{
+	background:yellow;
+	color:navy;
+	padding:10px;
+	margin:10px;
+	font-family:tahoma;
+}
+
+#demo1{
+	text-shadow:2px 2px 2px black;
+	text-align: center;
+}
+#demo1 sub{
+font-family: 'Tangerine', cursive;
+font-size:30px;
+letter-spacing: 3px;
+color:navy;
+font-weight: bolder;
+text-shadow: 0px 0px 0px black;
+}
+
+.text-lime{
+	color:rgba(104,253,100,.99);
+	
+}
+
+.myShadow{
+	text-shadow: 1px 1px .5px black;
+}
