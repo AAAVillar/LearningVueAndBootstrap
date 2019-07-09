@@ -6,7 +6,10 @@
 }
 
 body{
-	background:rgba(0,0,255,.3);
+	background:url('images/prettyGirlStream11b.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 	color:yellow;
 	padding:10px;
 	margin:10px;
@@ -15,8 +18,9 @@ body{
 }
 
 #vue-app{
-	background:yellow;
-	color:navy;
+	
+	color:lime;
+	text-shadow: 1px 1px 1px yellow;
 	padding:10px;
 	margin:10px;
 	font-family:tahoma;
@@ -43,3 +47,6 @@ text-shadow: 0px 0px 0px black;
 .myShadow{
 	text-shadow: 1px 1px .5px black;
 }
+
+.myDarkOP{background: rgba(0,0,0,.5);}
+.myDarkgreen{background: rgba(25,51,37,.85);}

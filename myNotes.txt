@@ -23,9 +23,15 @@ https://github.com/AAAVillar/LearningVueAndBootstrap.git
 })  // end of new Vue
 
 
-
-
-
+ *binding data to different attributes using v-bind or :  
+ v-bind:href is a vue directive
+ :href also works a vue directive
+ v-bind:value is a vue directive
+ :value also works a vue directive
+also
+	v-html="FarmerJs"  <-- v-html binds data  
+	the value of FarmerJs was declared in the app.js file in the data section 
+	it was declare a ....FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>'
 
 
 

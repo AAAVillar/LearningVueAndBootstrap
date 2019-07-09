@@ -6,7 +6,10 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	data:{
 		
 		name:"bobby",
-	    job:"Ninja-HairDresser"
+	    job:"Ninja-HairDresser",
+	    website_W3:'https://www.w3schools.com',
+	    FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>',
+	    age:25
 	},
 
 	methods:{
