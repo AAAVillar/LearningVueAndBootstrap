@@ -21,3 +21,16 @@ https://github.com/AAAVillar/LearningVueAndBootstrap.git
 
 	                        } // end of methods
 })  // end of new Vue
+
+
+
+
+
+
+
+
+
+
+
+
+
