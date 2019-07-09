@@ -9,7 +9,9 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	    job:"Ninja-HairDresser",
 	    website_W3:'https://www.w3schools.com',
 	    FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>',
-	    age:25
+	    age:25,
+	    x:0,
+	    y:0
 	},
 
 	methods:{
@@ -20,8 +22,29 @@ el:'#vue-app',  // the id is the target... of the new Vue
 
 	    greet2:function(time){
 	    	return 'Good ' + time + ' ' + this.name;
-	        } // methods
-	    }
+	       
+	    },
 
+	     add_1:function(){
+	    	this.age++;
+	    },
+
+	    subtract_1:function(){
+	    	this.age--;
+	    },
+
+	    add:function(inc){
+	    	this.age+= inc;
+	    },
+
+	    subtract:function(dec){
+	    	this.age-= dec;
+	    },
+
+	    upDateXY:function(event){
+	    	this.x = event.offsetX;
+	    	this.y = event.offsetY;
+	    }
+	}
 
 });

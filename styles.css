@@ -10,6 +10,7 @@ body{
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    width:100%;
 	color:yellow;
 	padding:10px;
 	margin:10px;
@@ -24,6 +25,14 @@ body{
 	padding:10px;
 	margin:10px;
 	font-family:tahoma;
+}
+
+#canvas{
+	background: url('images/face2a.png');
+	width:400px;
+	height:249px;
+	padding: 100px 20px;
+	border:3px solid yellow;
 }
 
 #demo1{
@@ -47,6 +56,12 @@ text-shadow: 0px 0px 0px black;
 .myShadow{
 	text-shadow: 1px 1px .5px black;
 }
+.myBorder{border:3px solid black;
+          box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+          }
+ #btn_1:hover{
+ 	background: lime;
+ }
 
-.myDarkOP{background: rgba(0,0,0,.5);}
+.myDarkOP{background: rgba(0,0,0,.75);}
 .myDarkgreen{background: rgba(25,51,37,.85);}

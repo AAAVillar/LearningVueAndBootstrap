@@ -31,7 +31,7 @@ https://github.com/AAAVillar/LearningVueAndBootstrap.git
 also
 	v-html="FarmerJs"  <-- v-html binds data  
 	the value of FarmerJs was declared in the app.js file in the data section 
-	it was declare a ....FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>'
+	it was declared as ....FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>'
 
 
 

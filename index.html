@@ -52,7 +52,7 @@
 		<a href="#footer" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
 	</li>
 </ul>
-<h2 id="home" class="jumbotron myDarkOP text-white myShadow d-flex justify-content-center p-1">{{greet('afternoon')}}</h2>
+<h2 id="home" class="jumbotron myDarkOP col-5 text-white myShadow d-flex justify-content-center p-1">{{greet('afternoon')}}</h2>
 <h2 class="myDarkOP col-5">{{greet2('night')}}</h2>
 <h2 class="myDarkOP col-5">Her name is :{{name}}</h2>
 <h3 class="myDarkOP col-5">And she is a :{{job}}</h3>
@@ -69,7 +69,32 @@
 <input type="text" name="" :value="job">   <!-- :value also works a vue directive -->
 <br>
 <p v-html="FarmerJs"></p>
+<!--  Events  -->
+<h2>Events</h2>
+<h3>Frist Example</h3>
+<button v-on:click="age++" id="btn_1" class="btn bg-danger text-white myShadow myBorder">Add a year</button>  <!-- v-on:click  is a directive  -->
+<button v-on:click="age--" class="btn bg-danger text-white myShadow myBorder">Subtract a year</button>  <!-- v-on:click  is a directive  -->
+<br>
+
+<h3>Second Example</h3>
+<button v-on:click="add_1">Add a year</button> 
+<button v-on:click="subtract_1">Subtract a year</button> 
+<button @click="add_1">Add a year</button> 
+<button @click="subtract_1">Subtract a year</button> 
+<br>
+
+<h3>Third Example</h3>
+<button v-on:click="add(1)">Add a year</button> 
+<button v-on:click="subtract(1)">Subtract a year</button> 
+<button v-on:dblclick="add(10)" title="you must double click to work it">Add 10 years</button> 
+<button v-on:dblclick="subtract(10)" title="you must double click to work it">Subtract 10 years</button> 
+
 <p class="myDarkOP col-3">My age is {{age}}</p>
+
+<!-- Mouse move Event  -->
+<div id="canvas" v-on:mousemove="upDateXY" ></div>
+<h2 class="myDarkOP col-2">{{x}},{{y}}</h2>
+
 
 
 
