@@ -44,6 +44,10 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	    upDateXY:function(event){
 	    	this.x = event.offsetX;
 	    	this.y = event.offsetY;
+	    },
+
+	    click:function(){
+	    	alert('you click the button');
 	    }
 	}
 
