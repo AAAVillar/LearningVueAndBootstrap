@@ -76,25 +76,26 @@
 		<button v-on:click="age++" id="btn_1" class="btn bg-danger text-white myShadow myBorder">Add a year</button>  <!-- v-on:click  is a directive  -->
 		<button v-on:click="age--" class="btn bg-danger text-white myShadow myBorder">Subtract a year</button>  <!-- v-on:click  is a directive  -->
 		<br>
-
+		<div class="btn-group-vertical">
 		<h3>Second Example</h3>
-		<button v-on:click="add_1">Add a year</button> 
-		<button v-on:click="subtract_1">Subtract a year</button> 
-		<button @click="add_1">Add a year</button> 
-		<button @click="subtract_1">Subtract a year</button> 
+		<button type="button" class="btn btn-danger mb-2 myShadow myBorder" v-on:click="add_1">Add a year</button> 
+		<button type="button" class="btn btn-primary mb-2 myShadow myBorder" v-on:click="subtract_1">Subtract a year</button> 
+		<button type="button" class="btn btn-danger mb-2 myShadow myBorder" @click="add_1">Add a year</button> 
+		<button type="button" class="btn btn-primary mb-2 myShadow myBorder" @click="subtract_1">Subtract a year</button>
+		</div>  <!-- end of class="btn-group-vertical"  --> 
 		<br>
 
 		<h3>Third Example</h3>
-
+		<div class="btn-group btn-group-lg">
 		<!-- I added an Event Modifier aka "once" -->
-		<button v-on:click.once="add(1)" title="This will only fire once, an event modifier has been added">Add a year</button>
+		<button type="button" class="btn btn-primary myShadow myBorder" v-on:click.once="add(1)" title="This will only fire once, an event modifier has been added">Add a year</button>
 
-		<button v-on:click="subtract(1)">Subtract a year</button> 
+		<button type="button" class="btn btn-danger myShadow myBorder" v-on:click="subtract(1)">Subtract a year</button> 
 
-		<button v-on:dblclick="add(10)" title="you must double click to work it">Add 10 years</button> 
-		<button v-on:dblclick="subtract(10)" title="you must double click to work it">Subtract 10 years</button> 
-
-		<p class="myDarkOP col-3">My age is {{age}}</p>
+		<button type="button" class="btn btn-primary myShadow myBorder" v-on:dblclick="add(10)" title="you must double click to work it">Add 10 years</button> 
+		<button type="button" class="btn btn-danger myShadow myBorder" v-on:dblclick="subtract(10)" title="you must double click to work it">Subtract 10 years</button> 
+		</div>  <!-- end of class = btn-group  -->
+		<h1 class="myDarkOP col-3">My age is {{age}}</h1>
 
 		<!-- Mouse move Event  -->
 		<div id="canvas" v-on:mousemove="upDateXY" ></div>
@@ -105,15 +106,55 @@
    
    		<!-- there are a whole list of event modifiers @ https://vuejs.org/v2/guide/  -->
 
+		<hr>
+		<hr>
+		<div class="bg-danger p-4">
+		<h1 class="text-center myShadow">Keyboard Events</h1>
+		<label for="#name_12">Name:</label>
+		<input type="text" id="name_12" v-on:keyup.enter="logName">
+		<!-- the event listener v-on:keyup.enter will not do anything until the enter button is pressed  -->
+		<!-- because of the " .enter " concatinated .enter -->
+		<br>
+		<label for="#age_12">Age</label>
+		<input type="text" id="age_12" v-on:keyup.enter="logAge">
+		<br>
+		<!-- the event listener v-on:keyup.alt.enter will not do anything until -->
+		<!-- the alt and enter buttons are pressed  -->
+		<!-- because of the " alt.enter "  are concatinated to the v-on:keyup -->
+		<label for="#workNum">Work Number</label>
+		<input type="text" id="workNum" v-on:keyup.alt.enter="logWorkNum" title="In order to enter your work number you have to press the 'alt key' and enter">
+		<p class="lead pl-4">*all outputs will be console.logged</p>
+		</div>  <!-- end of the class="bg-secondary"  -->
+
+
+		<!-- lesson #8  two way data binding -->
+		<!-- "v-model" allows you to update the data in the app.js file  -->
+		<!-- you can also output your answer this way  -->
+        <hr>
+		<hr>
+		<div class="bg-warning text-dark p-4">
+		<h1 class="myShadow">Keyboard Events</h1>
+		<label for="#name_12">Name:</label>
+		<input type="text" id="name_12" v-model="name_8" >
+		<br>
+		<h2>the name you entered is : <span class="bg-secondary text-light">{{name_8}}</span></h2>
+		<br>
+		<label for="#age_12">Age</label>
+		<input type="text" id="age_12" v-model="age_8" >
+		<br>
+		<h2>and you entered your age as :<span class="bg-secondary text-light">{{age_8}}</span></h2>
+		</div>  <!-- end of the class="bg-warning -->
 
 
 
-
-
-
-
-
-
+		<!-- lesson #9  -->
+		<div class="bg-secondary text-white p-4">
+		<h1 class="myShadow text-center">Computed Properties</h1>
+		<button type="button" class="btn btn-primary btn-lg myBorder m-3" v-on:click="a++">Add to A</button>
+		<button type="button" class="btn btn-danger btn-lg myBorder m-3" v-on:click="b++">Add to B</button>
+		<h2>A = {{a}}</h2>
+		<h2>B = {{b}}</h2>
+		</div>
 
 
 
@@ -141,7 +182,7 @@
 		<h2 id="theBottom" class="course-heading  d-flex justify-content-center mb-0 mt-0 pt-1 pb-1 myDarkOP text-white myShadow myBorder"><i class='fas fa-socks' style='font-size:24px'></i>-*footer </h2>
 		<ul class="nav myDarkgreen justify-content-center myShadow myBorder">
 			<li class="nav-item">
-				<a href="#theTop" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+				<a href="#home" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
 			</li>
 			<li class="nav-item">
 				<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>

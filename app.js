@@ -11,7 +11,12 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	    FarmerJs:'<a href= "https://farmerjhemp.com" target="_blank" >Farmer J\'s Hemp</a>',
 	    age:25,
 	    x:0,
-	    y:0
+	    y:0,
+	    name_8:'',
+	    age_8:'',
+	    age_9:20,
+	    a:0,
+	    b:0
 	},
 
 	methods:{
@@ -48,7 +53,19 @@ el:'#vue-app',  // the id is the target... of the new Vue
 
 	    click:function(){
 	    	alert('you click the button');
+	    },
+
+	    logName:function(){
+	    	console.log('you entered your Name');
+	    },
+	    logAge:function(){
+	    	console.log('you entered your Age');
+	    },
+	    logWorkNum:function(){
+	    	console.log("you entered your work number");
 	    }
-	}
+	},
+
+
 
 });
