@@ -19,7 +19,21 @@ https://github.com/AAAVillar/LearningVueAndBootstrap.git
 	                        	return 'Good Morning'
 	                        	} // end of greet function
 
-	                        } // end of methods
+	                        }, // end of methods
+
+	                        computed:{
+
+	                        		addToA:function(){
+	    	                         console.log('addToA');
+	    	                         return this.a + this.age_9;
+	                                  },
+
+	                               addToB:function(){
+	    	                        console.log('addToB');
+	    	                        return this.b + this.age_9;
+	                                 }
+
+	                        } // end of computed Properties
 })  // end of new Vue
 
 

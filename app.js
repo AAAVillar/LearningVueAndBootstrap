@@ -58,14 +58,39 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	    logName:function(){
 	    	console.log('you entered your Name');
 	    },
+
 	    logAge:function(){
 	    	console.log('you entered your Age');
 	    },
+
 	    logWorkNum:function(){
 	    	console.log("you entered your work number");
+	    },
+/*
+	    addToA:function(){
+	    	console.log('addToA');
+	    	return this.a + this.age_9;
+	    },
+
+	    addToB:function(){
+	    	console.log('addToB');
+	    	return this.b + this.age_9;
 	    }
+*/
 	},
 
+		computed:{
 
+			addToA:function(){
+	    	console.log('addToA');
+	    	return this.a + this.age_9;
+	    },
+
+	    addToB:function(){
+	    	console.log('addToB');
+	    	return this.b + this.age_9;
+	    }
+
+		}
 
 });
