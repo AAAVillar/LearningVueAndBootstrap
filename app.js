@@ -91,6 +91,6 @@ el:'#vue-app',  // the id is the target... of the new Vue
 	    	return this.b + this.age_9;
 	    }
 
-		}
+		}  // end of computed
 
 });
