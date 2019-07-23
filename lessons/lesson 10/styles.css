@@ -1,0 +1,32 @@
+
+*{padding: 0px;
+  margin: 0px;}
+
+  body{
+  	background: maroon;
+  	color:white;
+  	text-shadow: 1px 1px 1px black;
+  }
+
+  span{
+  	background: blue;
+  	color:white;
+  	text-shadow: 1px 1px 1px black;
+  	display:inline;
+  	padding: 10px;
+  	letter-spacing: .5rem;
+  	
+  	margin: 10px 0;
+  }
+
+  .key_1 span{
+  	background: lime;
+  	color:yellow;
+  	text-shadow: 1px 1px 2px black;
+  	font-weight: bolder;
+  }
+
+  .nearBy span:after{
+  	content:"nearBy watch out";
+  	margin-left: 10px;
+  }

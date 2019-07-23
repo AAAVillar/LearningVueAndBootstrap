@@ -23,19 +23,46 @@
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<title>Workin With Vue</title>
+	<title>Lesson 10 Vue</title>
 
 </head>
 <!-- End of div -->
 <body>
 
 	<div id = "vue-app" class = "container-fluid">
+		<h1>Dynamic CSS</h1>
+		<h2>Example 1</h2>
 
-		
-	</div><!-- End of id="vue-app" div -->
-	<script src="app.js"></script>
+		<!--
+		<div  v-on:click="key_1=!key_1" v-bind:class="{key_1:key_1}">
+			<br>
+			<span>Ryu</span>
+		</div>
+	-->
 
 
-	
+	<br>
+	<h2>Example 2</h2>
+
+	<div v-bind:class="compClasses">
+		<button v-on:click="nearBy=!nearBy">Toggle nearBy</button><br><br>
+		<button v-on:click="key_1=!key_1">Toggle available</button><br><br>
+		<span>Ryu</span>
+	</div>
+
+
+
+
+
+
+
+
+
+
+</div><!-- End of id="vue-app" div -->
+<script src="app.js"></script>
+
+
+
 </body>
 </html>

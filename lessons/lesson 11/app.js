@@ -5,6 +5,8 @@ el:'#vue-app',  // the id is the target... of the new Vue
 
 	data:{
 		
+		error:false,
+		success:false
 		
 	},
 
@@ -15,6 +17,9 @@ el:'#vue-app',  // the id is the target... of the new Vue
 
 		computed:{
 
+		
+				
+			
 	
 
 		}  // end of computed
