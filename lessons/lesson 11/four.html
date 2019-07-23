@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
 	<meta charset="utf-8">
 	<meta name="description" content="html5,css3,javascript,Vue.js">
 	<meta name="keywords" content="html5,css3,javascript,Vue.js">
@@ -22,15 +21,19 @@
 	<!-- my Icons for the nav bar -->
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		body{
+			background:navy;
+		}
 
-	<title>Lesson 10 Vue</title>
-
+		.myBorder{border:4px solid lime;}
+	</style>
+	<title>Document</title>
 </head>
-<!-- End of div -->
 <body>
 
-	<div id = "vue-app" class = "container-fluid bg-primary text-light pb-5">
-	<nav class="navbar navbar-expand-sm bg-secondary text-lime">
+	<div class="container">
+		<nav class="navbar navbar-expand-sm bg-secondary text-lime">
 
   <!-- Links -->
   <ul class="navbar-nav">
@@ -52,38 +55,15 @@
   </ul>
 
 </nav>	
-		<h1>Conditionals</h1>
-		<div class="btn-group">
-			<button v-on:click="error=!error" class="btn btn-outline-danger btn-lg">Toggle Error</button>
-
-			<div class="btn-group">
-				<button v-on:click="success=!success" class="btn btn-outline-success btn-lg dropdown-toggle" data-toggle="dropdown">Toggle Success
-				</button>
-				<div class="dropdown-menu">
-					<p class="dropdown-item" id="demo1">more info...</p>
-					<p class="dropdown-item" id="demo2">more info...</p>	
-				</div>
-			</div>
+	<h1>This is html FOUR</h1>
+	<h2>MEDIA OBJECTS....IN BOOTSTRAP 4</h2>
+	<div class="media myBorder bg-warning  p-3">
+		<img src="images/four.jpg" alt="one" class="m-3 rounded-circle" style="width:200px;">
+		<div class="media-body">
+			<h4>image four<small><i> today is monday</i></small></h4>
+			<p>today is monday all day long.....then tommarrow should be tuesday</p>
 		</div>
-		
-		<p v-if="error">the current condition is FALSE</p>
-		<h2 v-else-if="success">SUCCESS.....Y'ALL</h2>
-	
-<!--
-	<p v-show="error">No that's not right</p>
-	<p v-show="success"  >yes that is right</p>
--->
-<h1>pagnation</h1>
-<ul>
-	<li class="page-item"><a href="one.html" class="page-link">ONE</a></li>
-	<li class="page-item"><a href="two.html" class="page-link">TWO</a></li>
-	<li class="page-item"><a href="three.html" class="page-link">THREE</a></li>
-	<li class="page-item"><a href="four.html" class="page-link">FOUR</a></li>
-</ul>
-</div><!-- End of id="vue-app" div -->
-<script src="app.js"></script>
-
-
-
+	</div>
+	</div>
 </body>
 </html>

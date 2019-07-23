@@ -8,4 +8,27 @@
   	text-shadow: 1px 1px 1px black;
   }
 
-  
+  #demo1:after{
+    content:".....you are the lucky winner......!";
+  }
+
+  #demo2:after{
+    content:".....smile you've won......!";
+  }
+
+  .text-lime a{
+    color:lime;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .bg-three{
+    background: rgba(96,64,36,.99);
+  }
+
+  .bg-two{
+    background: rgba(254,56,40,.99);
+  }
+
+  .bg-one{
+    background: rgba(194,124,73,.99);
+  }
