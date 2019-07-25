@@ -32,6 +32,36 @@
 	<div id = "vue-app" class = "container-fluid bg-primary text-light pb-5">
 
 	
+		<h1>Looping through lists</h1>
+			<ul class="p-3">
+				<!-- the word characters is the reference to the data -->
+				<li v-for="name in characters">{{name}}</li>
+			</ul>
+
+			<ul class="p-3">
+				<li v-for="info in ninjas">{{info.name}} - {{info.age}}</li>
+			</ul>
+
+			<ul class="p-3">
+				<li v-for="(info,index) in ninjas">{{index}}.{{info.name}} - {{info.age}}</li>
+			</ul>
+
+			<div v-for="(ninja,index) in ninjas" class="bg-success">
+				<h3>{{index}}.{{ninja.name}}</h3>
+				<p>{{ninja.age}}</p>
+			</div>
+
+			<template v-for="(ninja,index) in ninjas" >
+				<h3>{{index}}.{{ninja.name}}</h3>
+				<p>{{ninja.age}}</p>
+			</template>
+
+			<template v-for="ninja in ninjas" >
+				<div v-for="(val,key) in ninja">
+					
+					<p>{{key}} -{{val}}</p>
+				</div>
+			</template>
 
 
 
@@ -45,11 +75,6 @@
 
 
 
-
-
-
-
-		
 	</div><!-- End of id="vue-app" div -->
 	<script src="app.js"></script>
 
