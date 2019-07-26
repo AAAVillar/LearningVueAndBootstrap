@@ -23,56 +23,40 @@
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<title>Lesson 12 Vue</title>
+	<title>Lesson 13 Vue</title>
 
 </head>
 <!-- End of div -->
 <body>
 
-	<div id = "vue-app" class = "container-fluid bg-primary text-light pb-5">
+	<div id = "vue-app" class = "container-fluid bg-primary text-light ">
+		<div class="bg-dark mb-0">
+		<h1 align="center"><span id="orange" >Orange </span> is the <span id="yellow">*new</span> <span id="pink">Pink</span></h1>
+		</div>
+		<!-- bag image    -->
 
-	
-		<h1>Looping through lists</h1>
+		<div id="bag" v-bind:class="{burst: ended }">
 
-			<ul class="p-3">
-				<!-- the word characters is the reference to the data -->
-				<li v-for="name in characters">{{name}}</li>
-			</ul>
+		</div>
+		<h2 v-if="ended" class="d-flex  justify-content-center mt-0 pt-0"><span id="red"><u>WTF?</u></span></h2>
+		<!-- bag health   -->
 
+		<div id="bag-health">
+			
+			<div v-bind:style="{width:health + '%' }">
 
-
-			<ul class="p-3">
-				<li v-for="info in ninjas">{{info.name}} - {{info.age}}</li>
-			</ul>
-
-
-
-			<ul class="p-3">
-				<li v-for="(info,index) in ninjas">{{index}}.{{info.name}} - {{info.age}}</li>
-			</ul>
-
-
-
-			<div v-for="(ninja,index) in ninjas" class="bg-success">
-				<h3>{{index}}.{{ninja.name}}</h3>
-				<p>{{ninja.age}}</p>
 			</div>
+		</div>
 
 
-
-			<template v-for="(ninja,index) in ninjas" >
-				<h3>{{index}}.{{ninja.name}}</h3>
-				<p>{{ninja.age}}</p>
-			</template>
+		
+		<!-- game controls   -->
 
 
-
-			<template v-for="ninja in ninjas" >
-				<div v-for="(val,key) in ninja">
-					
-					<p>{{key}} -{{val}}</p>
-				</div>
-			</template>
+		<div id="controls" class="btn d-flex  justify-content-center" >
+			<button class="bg-danger font-weight-bolder myBorder p-3 mr-2" v-on:click="punch" v-show="!ended">Punch</button>
+			<button class="bg-warning font-weight-bolder myBorder p-3" v-on:click="restart">Restart</button>
+		</div>
 
 
 
@@ -85,7 +69,7 @@
 
 
 
-
+		
 	</div><!-- End of id="vue-app" div -->
 	<script src="app.js"></script>
 

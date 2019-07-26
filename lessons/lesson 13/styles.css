@@ -1,0 +1,73 @@
+
+*{padding: 0px;
+	margin: 0px;}
+
+	body{
+		background: navy;
+		color:white;
+		text-shadow: 1px 1px 1px black;
+	}
+
+
+	#bag{
+		width:200px;
+		height:200px;
+		margin:0 auto;
+		background:url("images/bag.png")center no-repeat;
+		background-size: 80%
+	}
+
+	#bag.burst{
+		background: url("images/bag-health.png")center no-repeat;
+		background-size: 80%
+	}
+
+
+	#bag-health{
+		width:200px;
+		border:3px solid black;
+		margin:0 auto 20px auto ;
+		background: pink;
+  	
+  }
+
+  #bag-health div{
+  	height:20px;
+  	background:orange;
+  	border-right: 3px solid black;
+  	
+  }
+
+  #controls{
+  	width:120px;
+  	margin:0 auto;
+  	padding: 12px 0;
+  }
+
+#orange {
+	color:orange;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bolder;
+}
+
+#yellow{
+	color:yellow;
+	text-shadow: 2px 2px 1px black;
+	font-weight: bolder;
+}
+
+#pink{
+	color:pink;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bolder;
+}
+
+#red{
+color:red;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bolder;	
+}
+
+.myBorder{
+	border:3px solid black;
+}
