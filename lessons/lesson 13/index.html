@@ -31,14 +31,20 @@
 
 	<div id = "vue-app" class = "container-fluid bg-primary text-light ">
 		<div class="bg-dark mb-0">
-		<h1 align="center"><span id="orange" >Orange </span> is the <span id="yellow">*new</span> <span id="pink">Pink</span></h1>
+			<h1 align="center"><span id="orange" >Orange </span> is the <span id="yellow">*new</span> <span id="pink">Pink</span></h1>
 		</div>
+
+
 		<!-- bag image    -->
 
 		<div id="bag" v-bind:class="{burst: ended }">
 
 		</div>
 		<h2 v-if="ended" class="d-flex  justify-content-center mt-0 pt-0"><span id="red"><u>WTF?</u></span></h2>
+
+
+
+		
 		<!-- bag health   -->
 
 		<div id="bag-health">
