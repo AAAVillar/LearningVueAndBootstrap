@@ -6,6 +6,7 @@
 		background: navy;
 		color:white;
 		text-shadow: 1px 1px 1px black;
+		font-family: 'Trade Winds', cursive
 	}
 
 
@@ -65,9 +66,14 @@
 #red{
 color:red;
 	text-shadow: 1px 1px 1px black;
-	font-weight: bolder;	
+	font-weight: bolder;
+	letter-spacing: 1rem;	
 }
 
 .myBorder{
 	border:3px solid black;
+}
+
+.myText-shadow{
+	text-shadow: 2px 2px 22px black;
 }

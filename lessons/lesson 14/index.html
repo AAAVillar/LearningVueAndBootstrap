@@ -21,63 +21,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 	<!-- my Icons for the nav bar -->
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-	<link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<title>Lesson 13 Vue</title>
+	<title>Lesson 14 Vue</title>
 
 </head>
 <!-- End of div -->
 <body>
 
-	<div id = "vue-app" class = "container-fluid bg-primary text-light ">
-		<div class="bg-dark mb-0">
-			<h1 align="center"><span id="orange" >Orange </span> is the <span id="yellow">*new</span> <span id="pink">Pink</span></h1>
-		</div>
+	<h1>Multiple Vue Instances</h1>
+
+	<div id = "vue-app-one" class = "container-fluid bg-primary text-light pb-5">
+
+	<h2>{{title}}</h2>
+	<p>{{greet}}</p>
+
+	</div><!-- End of id="vue-app-one" div -->
 
 
-		<!-- bag image    -->
+	<div id = "vue-app-two" class = "container-fluid bg-primary text-light pb-5">
 
-		<div id="bag" v-bind:class="{burst: ended }">
-
-		</div>
-		<h2 v-if="ended" class="d-flex  justify-content-center mt-0 pt-0"><span id="red">WTF?</span></h2>
-
-
-
-		
-		<!-- bag health   -->
-
-		<div id="bag-health">
-			
-			<div v-bind:style="{width:health + '%' }">
-
-			</div>
-		</div>
+	<h2>{{title}}</h2>
+	<p>{{greet}}</p>
+	<button v-on:click="changeTitle">Change App One Title</button>
+	</div><!-- End of id="vue-app-two" div -->
 
 
-		
-		<!-- game controls   -->
-
-
-		<div id="controls" class="btn d-flex  justify-content-center" >
-			<button class="bg-danger font-weight-bolder text-light display-3 myText-shadow myBorder p-3 mr-2" v-on:click="punch" v-show="!ended">Punch</button>
-			<button class="bg-warning font-weight-bolder text-light display-3 myText-shadow myBorder p-3" v-on:click="restart">Restart</button>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-		
-	</div><!-- End of id="vue-app" div -->
 	<script src="app.js"></script>
 
 
