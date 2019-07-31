@@ -38,7 +38,7 @@
 
 		<!-- bag image    -->
 
-		<div id="bag" v-bind:class="{burst: ended }">
+		<div id="bag" class="rounded-circle " v-bind:class="{burst: ended } " width="220" height="220">
 
 		</div>
 		<h2 v-if="ended" class="d-flex  justify-content-center mt-0 pt-0"><span id="red">WTF?</span></h2>
@@ -50,7 +50,7 @@
 
 		<div id="bag-health">
 			
-			<div v-bind:style="{width:health + '%' }">
+			<div v-bind:style="{width:health + '%' }" class="shadow-lg">
 
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 		<!-- game controls   -->
 
 
-		<div id="controls" class="btn d-flex  justify-content-center" >
+		<div id="controls" class="btn d-flex  justify-content-center shadow-lg" >
 			<button class="bg-danger font-weight-bolder text-light display-3 myText-shadow myBorder p-3 mr-2" v-on:click="punch" v-show="!ended">Punch</button>
 			<button class="bg-warning font-weight-bolder text-light display-3 myText-shadow myBorder p-3" v-on:click="restart">Restart</button>
 		</div>
