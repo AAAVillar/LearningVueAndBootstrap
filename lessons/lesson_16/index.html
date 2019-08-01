@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="description" content="html5,css3,javascript,Vue.js">
+	<meta name="keywords" content="html5,css3,javascript,Vue.js">
+	<meta name="author" content="mySelf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- javascript jquery,popper, bootstrap-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+
+	<!-- styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<!-- my Icons for the nav bar -->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Lesson 16 Vue</title>
+
+</head>
+<!-- End of div -->
+<body>
+
+	<div id = "vue-app" class = "container-fluid bg-primary text-light pb-5">
+
+	<h2>Refs</h2>
+
+	<input type="text" ref="input">
+	<button v-on:click="readRefs">Submit</button>
+	<p>Your fav food: {{output}}</p>
+	<div ref="test">onions and butter</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div><!-- End of id="vue-app" div -->
+	<script src="app.js"></script>
+
+
+
+</body>
+</html>
