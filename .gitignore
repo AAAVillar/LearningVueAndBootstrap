@@ -1,3 +1,7 @@
 myNotes.txt
 /images
-/lessons/lesson 11/images
+/lessons/lesson_11/images
+/lessons/lesson_17/vuejs-playlist/node_modules
+/lessons/lesson_17/vuejs-playlist/package-lock.json
+/lessons/lesson_17/vuejs-playlist/package.json
+/lessons/lesson_17/vuejs-playlist/webpack.config.js
