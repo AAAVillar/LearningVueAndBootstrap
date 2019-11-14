@@ -1,7 +1,7 @@
 
 new Vue({
-
-el:'#vue-app',  // the id is the target... of the new Vue
+                // el ...stands for element
+el:'#vue-app',  // the #id is the target... of the new Vue...DO NOT forget the '#' symbol
 
 	data:{
 		

@@ -6,6 +6,13 @@ https://github.com/AAAVillar/LearningVueAndBootstrap.git
 3. then write a script to bring into the html your <script src= "app.js"></script>
 	this is where you write the data/methods for the Vue.js
 4. In the app.js folder you create a instance of:
+
+new Vue({});   <-- example 1.
+
+
+
+
+example 2.
                   new Vue({
 	                        el:'#vue-app',
 
