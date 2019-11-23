@@ -65,3 +65,8 @@ text-shadow: 0px 0px 0px black;
 
 .myDarkOP{background: rgba(0,0,0,.75);}
 .myDarkgreen{background: rgba(25,51,37,.85);}
+
+
+.MyFontSize{
+	font-size:24px;
+}

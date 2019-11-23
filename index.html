@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 	
+	<!-- meta data -->
 	<meta charset="utf-8">
-	<meta name="description" content="html5,css3,javascript,Vue.js">
-	<meta name="keywords" content="html5,css3,javascript,Vue.js">
+	<meta name="description" content="html5,css3,javascript,Vue.js,bootstrap4">
+	<meta name="keywords" content="html5,css3,javascript,Vue.js,bootstrap4">
 	<meta name="author" content="Villar">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!-- javascript jquery,popper, bootstrap-->
+	<!-- (* jquery has to be first) javascript jquery, popper, bootstrap-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -36,30 +37,31 @@
 <!-- End of div -->
 <body>
 
-    <!-- the #vue-app is your connection to the Vue.js framework  -->
+	<!-- the #vue-app is your connection to the Vue.js framework  -->
 	<div id = "vue-app" class = "container-fluid">
 
 		<!--  Nav  -->
 		<ul class="nav bg-dark text-white p-0 justify-content-center fixed-top mb-3">
 			<li class="nav-item">
-				<a href="#home" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+				<a href="#home" class="nav-link text-white"><i class='fas fa-home MyFontSize' ></i> Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+				<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette MyFontSize' ></i> Text Colors</a>
 			</li>
 			<li class="nav-item">
-				<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+				<a href="#buttons" class="nav-link"><i class='fas fa-bullseye MyFontSize' ></i> Buttons</a>
 			</li>
 			<li class="nav-item">
-				<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+				<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images MyFontSize' ></i> Carousel</a>
 			</li>
 			<li class="nav-item">
-				<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+				<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit MyFontSize' ></i>Forms</a>
 			</li>
 			<li class="nav-item">
-				<a href="#footer" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
+				<a href="#footer" class="nav-link text-white"><i class='fas fa-socks MyFontSize' ></i> Footer &amp; Today's Date</a>
 			</li>
-		</ul>
+		</ul>  
+		<!-- /Nav -->
 		
 		<h2 id="home" class="jumbotron myDarkOP col-5 text-white myShadow d-flex justify-content-center p-1">{{greet('afternoon')}}</h2>
 		<h2 class="myDarkOP col-5">{{greet2('night')}}</h2>
@@ -86,23 +88,23 @@
 		<button v-on:click="age--" class="btn bg-danger text-white myShadow myBorder">Subtract a year</button>  <!-- v-on:click  is a directive  -->
 		<br>
 		<div class="btn-group-vertical">
-		<h3>Second Example</h3>
-		<button type="button" class="btn btn-danger mb-2 myShadow myBorder" v-on:click="add_1">Add a year</button> 
-		<button type="button" class="btn btn-primary mb-2 myShadow myBorder" v-on:click="subtract_1">Subtract a year</button> 
-		<button type="button" class="btn btn-danger mb-2 myShadow myBorder" @click="add_1">Add a year</button> 
-		<button type="button" class="btn btn-primary mb-2 myShadow myBorder" @click="subtract_1">Subtract a year</button>
+			<h3>Second Example</h3>
+			<button type="button" class="btn btn-danger mb-2 myShadow myBorder" v-on:click="add_1">Add a year</button> 
+			<button type="button" class="btn btn-primary mb-2 myShadow myBorder" v-on:click="subtract_1">Subtract a year</button> 
+			<button type="button" class="btn btn-danger mb-2 myShadow myBorder" @click="add_1">Add a year</button> 
+			<button type="button" class="btn btn-primary mb-2 myShadow myBorder" @click="subtract_1">Subtract a year</button>
 		</div>  <!-- end of class="btn-group-vertical"  --> 
 		<br>
 
 		<h3>Third Example</h3>
 		<div class="btn-group btn-group-lg">
-		<!-- I added an Event Modifier aka "once" -->
-		<button type="button" class="btn btn-primary myShadow myBorder" v-on:click.once="add(1)" title="This will only fire once, an event modifier has been added">Add a year</button>
+			<!-- I added an Event Modifier aka "once" -->
+			<button type="button" class="btn btn-primary myShadow myBorder" v-on:click.once="add(1)" title="This will only fire once, an event modifier has been added">Add a year</button>
 
-		<button type="button" class="btn btn-danger myShadow myBorder" v-on:click="subtract(1)">Subtract a year</button> 
+			<button type="button" class="btn btn-danger myShadow myBorder" v-on:click="subtract(1)">Subtract a year</button> 
 
-		<button type="button" class="btn btn-primary myShadow myBorder" v-on:dblclick="add(10)" title="you must double click to work it">Add 10 years</button> 
-		<button type="button" class="btn btn-danger myShadow myBorder" v-on:dblclick="subtract(10)" title="you must double click to work it">Subtract 10 years</button> 
+			<button type="button" class="btn btn-primary myShadow myBorder" v-on:dblclick="add(10)" title="you must double click to work it">Add 10 years</button> 
+			<button type="button" class="btn btn-danger myShadow myBorder" v-on:dblclick="subtract(10)" title="you must double click to work it">Subtract 10 years</button> 
 		</div>  <!-- end of class = btn-group  -->
 		<h1 class="myDarkOP col-3">My age is {{age}}</h1>
 
@@ -112,59 +114,59 @@
 
 		<!-- I added a Event Modifier to prevent the link from making the link  -->
 		<a v-on:click.prevent="click" href='https://www.w3schools.com' target="_blank">W3_Schools</a>
-   
-   		<!-- there are a whole list of event modifiers @ https://vuejs.org/v2/guide/  -->
+
+		<!-- there are a whole list of event modifiers @ https://vuejs.org/v2/guide/  -->
 
 		<hr>
 		<hr>
 		<div class="bg-danger p-4">
-		<h1 class="text-center myShadow">Keyboard Events</h1>
-		<label for="#name_12">Name:</label>
-		<input type="text" id="name_12" v-on:keyup.enter="logName">
-		<!-- the event listener v-on:keyup.enter will not do anything until the enter button is pressed  -->
-		<!-- because of the " .enter " concatinated .enter -->
-		<br>
-		<label for="#age_12">Age</label>
-		<input type="text" id="age_12" v-on:keyup.enter="logAge">
-		<br>
-		<!-- the event listener v-on:keyup.alt.enter will not do anything until -->
-		<!-- the alt and enter buttons are pressed  -->
-		<!-- because of the " alt.enter "  are concatinated to the v-on:keyup -->
-		<label for="#workNum">Work Number</label>
-		<input type="text" id="workNum" v-on:keyup.alt.enter="logWorkNum" title="In order to enter your work number you have to press the 'alt key' and enter">
-		<p class="lead pl-4">*all outputs will be console.logged</p>
+			<h1 class="text-center myShadow">Keyboard Events</h1>
+			<label for="#name_12">Name:</label>
+			<input type="text" id="name_12" v-on:keyup.enter="logName">
+			<!-- the event listener v-on:keyup.enter will not do anything until the enter button is pressed  -->
+			<!-- because of the " .enter " concatinated .enter -->
+			<br>
+			<label for="#age_12">Age</label>
+			<input type="text" id="age_12" v-on:keyup.enter="logAge">
+			<br>
+			<!-- the event listener v-on:keyup.alt.enter will not do anything until -->
+			<!-- the alt and enter buttons are pressed  -->
+			<!-- because of the " alt.enter "  are concatinated to the v-on:keyup -->
+			<label for="#workNum">Work Number</label>
+			<input type="text" id="workNum" v-on:keyup.alt.enter="logWorkNum" title="In order to enter your work number you have to press the 'alt key' and enter">
+			<p class="lead pl-4">*all outputs will be console.logged</p>
 		</div>  <!-- end of the class="bg-secondary"  -->
 
 
 		<!-- lesson #8  two way data binding -->
 		<!-- "v-model" allows you to update the data in the app.js file  -->
 		<!-- you can also output your answer this way  -->
-        <hr>
+		<hr>
 		<hr>
 		<div class="bg-warning text-dark p-4">
-		<h1 class="myShadow">Keyboard Events</h1>
-		<label for="#name_12">Name:</label>
-		<input type="text" id="name_12" v-model="name_8" >
-		<br>
-		<h2>the name you entered is : <span class="bg-secondary text-light">{{name_8}}</span></h2>
-		<br>
-		<label for="#age_12">Age</label>
-		<input type="text" id="age_12" v-model="age_8" >
-		<br>
-		<h2>and you entered your age as :<span class="bg-secondary text-light">{{age_8}}</span></h2>
+			<h1 class="myShadow">Keyboard Events</h1>
+			<label for="#name_12">Name:</label>
+			<input type="text" id="name_12" v-model="name_8" >
+			<br>
+			<h2>the name you entered is : <span class="bg-secondary text-light">{{name_8}}</span></h2>
+			<br>
+			<label for="#age_12">Age</label>
+			<input type="text" id="age_12" v-model="age_8" >
+			<br>
+			<h2>and you entered your age as :<span class="bg-secondary text-light">{{age_8}}</span></h2>
 		</div>  <!-- end of the class="bg-warning -->
 
 
 
 		<!-- lesson #9  -->
 		<div class="bg-secondary text-white p-4">
-		<h1 class="myShadow text-center">Computed Properties</h1>
-		<button type="button" class="btn btn-primary btn-lg myBorder m-3" v-on:click="a++">Add to A</button>
-		<button type="button" class="btn btn-danger btn-lg myBorder m-3" v-on:click="b++">Add to B</button>
-		<h2>A = {{a}}</h2>
-		<h2>B = {{b}}</h2>
-		<h2>Age + A = {{addToA }}</h2>
-		<h2>Age + B = {{addToB }}</h2>
+			<h1 class="myShadow text-center">Computed Properties</h1>
+			<button type="button" class="btn btn-primary btn-lg myBorder m-3" v-on:click="a++">Add to A</button>
+			<button type="button" class="btn btn-danger btn-lg myBorder m-3" v-on:click="b++">Add to B</button>
+			<h2>A = {{a}}</h2>
+			<h2>B = {{b}}</h2>
+			<h2>Age + A = {{addToA }}</h2>
+			<h2>Age + B = {{addToB }}</h2>
 		</div>
 
 
